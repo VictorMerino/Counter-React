@@ -16,11 +16,17 @@ const CounterApp = ({ value }) => {
   return (
     <>
       <h1>CounterApp</h1>
-      <h2>{counter}</h2>
+      <h2 data-testid="result">{counter}</h2>
 
-      <button onClick={handleSubstractOne}>- 1</button>
-      <button onClick={handleReset}>Reset</button>
-      <button onClick={handleAddOne}>+ 1</button>
+      <button onClick={handleSubstractOne} data-testid="substract">
+        - 1
+      </button>
+      <button onClick={handleReset} data-testid="reset">
+        Reset
+      </button>
+      <button onClick={handleAddOne} data-testid="add">
+        + 1
+      </button>
     </>
   )
 }
