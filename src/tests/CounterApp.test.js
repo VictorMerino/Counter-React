@@ -27,7 +27,7 @@ describe('CounterApp', () => {
     fireEvent.click(addBtn)
     expect(Number(screen.getByTestId('result').textContent)).toBe(1)
   })
-  test.only('reset to default value', async () => {
+  test('reset to default value', async () => {
     const clickedTimes = 5
     render(<CounterApp value={defaultValue} />)
     const addBtn = await screen.findByTestId('add')
