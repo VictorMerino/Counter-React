@@ -1,8 +1,8 @@
 import PropTypes from 'prop-types'
 
 const CounterApp = ({ value }) => {
-  const addOne = () => {
-    console.log('addOne called')
+  const addOne = event => {
+    console.log('addOne called', event)
   }
   return (
     <>
