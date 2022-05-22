@@ -1,12 +1,15 @@
 import PropTypes from 'prop-types'
 
 const CounterApp = ({ value }) => {
+  const addOne = () => {
+    console.log('addOne called')
+  }
   return (
     <>
       <h1>CounterApp</h1>
       <h2>{value}</h2>
 
-      <button>+1</button>
+      <button onClick={addOne}>+1</button>
     </>
   )
 }
