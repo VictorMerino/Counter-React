@@ -1,7 +1,7 @@
-// const getImagenPromise = () => new Promise( resolve => resolve('https://ajskdhaskjdhajs.com') )
-// getImagenPromise().then( console.log );
+// const getImagePromise = () => new Promise( resolve => resolve('https://ajskdhaskjdhajs.com') )
+// getImagePromise().then( console.log );
 
-const getImagen = async () => {
+const getImage = async () => {
   try {
     const giphyApiKey = 'Ig6uoBA41jzLtcxCV9g470GyaEdHHzBi'
     const resp = await fetch(
@@ -20,4 +20,4 @@ const getImagen = async () => {
   }
 }
 
-getImagen()
+getImage()
