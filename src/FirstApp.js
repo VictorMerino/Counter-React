@@ -1,9 +1,11 @@
-const FirstApp = ({ greeting }) => {
+const FirstApp = ({ greeting, requiredPropExample }) => {
   const userName = 'Mader Faker'
   const object = {
     name: 'Name 1',
     surname: 'Shurmane',
   }
+
+  if (!requiredPropExample) throw new Error('requiredPropExample is required')
   return (
     <>
       <h1>Hola {userName}</h1>
