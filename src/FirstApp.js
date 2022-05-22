@@ -10,7 +10,7 @@ const FirstApp = ({ greeting, subtitle }) => {
     <>
       <h1>Hola {userName}</h1>
       <p data-testid="greeting-paragraph">Saludo desde props: {greeting}</p>
-      <p>{subtitle}</p>
+      <p data-testid="subtitle">{subtitle}</p>
       <pre>{JSON.stringify(object, null, 2)}</pre>
     </>
   )
