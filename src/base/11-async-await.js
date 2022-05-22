@@ -1,7 +1,7 @@
 // const getImagePromise = () => new Promise( resolve => resolve('https://ajskdhaskjdhajs.com') )
 // getImagePromise().then( console.log );
 
-const getImage = async () => {
+export const getImage = async () => {
   try {
     const giphyApiKey = 'Ig6uoBA41jzLtcxCV9g470GyaEdHHzBi'
     const resp = await fetch(
@@ -16,7 +16,8 @@ const getImage = async () => {
     document.body.append(img)
   } catch (error) {
     // manejo del error
-    console.error(error)
+    // console.error(error)
+    return error
   }
 }
 
