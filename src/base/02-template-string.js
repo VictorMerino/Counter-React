@@ -6,8 +6,8 @@ const nombreCompleto = `${nombre} ${apellido}`
 
 console.log(nombreCompleto)
 
-export function getSaludo(nombre = 'Goku') {
+export function getGreeting(nombre = 'Goku') {
   return 'Hola ' + nombre
 }
 
-console.log(`Este es un texto: ${getSaludo(nombre)}  `)
+console.log(`Este es un texto: ${getGreeting(nombre)}  `)
