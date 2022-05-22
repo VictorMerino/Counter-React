@@ -3,8 +3,9 @@ import PropTypes from 'prop-types'
 
 const CounterApp = ({ value }) => {
   const [counter, setCounter] = useState(0)
-  const handleAddOne = event => {
+  const handleAddOne = () => {
     setCounter(counter + 1)
+    // setCounter(counter => counter + 1) // This is the same as the previous one
   }
   return (
     <>
