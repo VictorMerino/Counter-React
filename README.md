@@ -3,6 +3,12 @@
 App that add, substract and reset a counter
 based on user clicks.
 
+For some tests in the app you should provide your own giphy apikey, like this in .env file:
+
+### `REACT_APP_GIPHY_API_KEY=Ig6uoBA41jzLtcxCV9g470GyaEdHHzBi`
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
