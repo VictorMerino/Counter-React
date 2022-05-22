@@ -6,6 +6,7 @@ describe('FirstApp', () => {
     const expectedGreeting = 'Hi Apple'
 
     render(<FirstApp greeting={expectedGreeting} />)
+
     expect(screen.getByTestId('greeting-paragraph').textContent).toContain(
       expectedGreeting
     )
