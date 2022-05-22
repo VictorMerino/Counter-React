@@ -1,4 +1,4 @@
-const FirstApp = () => {
+const FirstApp = ({ greeting }) => {
   const userName = 'Mader Faker'
   const object = {
     name: 'Name 1',
@@ -7,6 +7,7 @@ const FirstApp = () => {
   return (
     <>
       <h1>Hola {userName}</h1>
+      <p>Saludo desde props: {greeting}</p>
       <pre>{JSON.stringify(object, null, 2)}</pre>
     </>
   )
