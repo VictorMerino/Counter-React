@@ -1,5 +1,5 @@
 // Tarea
-const getActiveUser = name => ({
+export const getActiveUser = name => ({
   uid: 'ABC567',
   username: name,
 })
