@@ -1,11 +1,11 @@
-import { getheroById } from './08-imp-exp'
+import { getHeroById } from './08-imp-exp'
 
-export const getheroByIdAsync = id => {
+export const getHeroByIdAsync = id => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       // Tarea
       // importen el
-      const p1 = getheroById(id)
+      const p1 = getHeroById(id)
       if (p1) {
         resolve(p1)
       } else {

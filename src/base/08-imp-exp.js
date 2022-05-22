@@ -7,10 +7,10 @@ import { heros } from '../data/heros'
 
 export const getHeroById = id => heros.find(hero => hero.id === id)
 
-// console.log( getheroById(2) );
+// console.log( getHeroById(2) );
 
 // find?, filter
 export const getHerosByOwner = owner =>
   heros.filter(hero => hero.owner === owner)
 
-// console.log( getherosByOwner('Marvel') );
+// console.log( getHerosByOwner('Marvel') );
