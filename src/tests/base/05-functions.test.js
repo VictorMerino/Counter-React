@@ -1,6 +1,6 @@
-import { getActiveUser } from '../../base/05-funciones'
+import { getActiveUser } from '../../base/05-functions'
 
-describe('05-funciones', () => {
+describe('05-functions', () => {
   it('getActiveUser should return the expected active user', () => {
     const expectedActiveUser = {
       uid: 'ABC567',
