@@ -1,4 +1,7 @@
-# Getting Started with Create React App
+# Counter App
+
+App that add, substract and reset a counter
+based on user clicks.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
