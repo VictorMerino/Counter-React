@@ -1,10 +1,14 @@
 html, body {
-  margin: auto;
-  padding: 3em;
   background-color: rgb(11, 3, 3);
   color: #ececec;
   font-family: 'Helvetica Neue';
   font-size: 1.3em;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
 button {
