@@ -2,6 +2,8 @@ import { getImage } from '../../base/11-async-await'
 
 describe('11-async/await', () => {
   test('should return image url', async () => {
-    expect(typeof (await getImage())).toBe('string')
+    const imgUrl = await getImage()
+    expect(typeof imgUrl).toBe('string')
+    expect(imgUrl).toContain('https')
   })
 })
