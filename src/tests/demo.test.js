@@ -1,5 +1,6 @@
 describe('DemoTest', () => {
   it('First test', () => {
-    console.log('Hello')
+    const isActive = true
+    expect(isActive).toEqual(true)
   })
 })
