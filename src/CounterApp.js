@@ -14,3 +14,5 @@ CounterApp.propTypes = {
 }
 
 export default CounterApp
+
+// rafcp -> Functional component snippet
