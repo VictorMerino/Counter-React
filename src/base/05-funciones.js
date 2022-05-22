@@ -1,8 +1,8 @@
 // Tarea
-const getUsuarioActivo = nombre => ({
+const getActiveUser = name => ({
   uid: 'ABC567',
-  username: nombre,
+  username: name,
 })
 
-const usuarioActivo = getUsuarioActivo('Fernando')
-console.log(usuarioActivo)
+const activeUser = getActiveUser('Onofre')
+console.log(activeUser)
