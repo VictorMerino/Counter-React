@@ -1,8 +1,8 @@
 import { createRoot } from 'react-dom/client'
-import FirstApp from './FirstApp'
+import CounterApp from './CounterApp'
 
 import './index.css'
 const divRoot = document.querySelector('#root')
 
 const root = createRoot(divRoot)
-root.render(<FirstApp greeting="Hola, soy Alfred (from props)" />)
+root.render(<CounterApp value={0} />)
