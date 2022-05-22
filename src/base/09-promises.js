@@ -1,6 +1,6 @@
 import { getheroById } from './bases/08-imp-exp'
 
-// const promesa = new Promise( (resolve, reject) => {
+// const promise = new Promise( (resolve, reject) => {
 
 //     setTimeout( () =>  {
 //         // Tarea
@@ -12,7 +12,7 @@ import { getheroById } from './bases/08-imp-exp'
 
 // });
 
-// promesa.then( (hero) => {
+// promise.then( (hero) => {
 //     console.log('hero', hero)
 // })
 // .catch( err => console.warn( err ) );
