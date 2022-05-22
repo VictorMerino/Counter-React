@@ -1,10 +1,10 @@
 import { getHeroById, getHerosByOwner } from '../../base/08-imp-exp'
-import { heroes } from '../../data/heroes'
+import { heros } from '../../data/heros'
 
 describe('08-imp-exp', () => {
-  const heroData = heroes
+  const heroData = heros
 
-  test('getHeroeById should return a hero', () => {
+  test('getheroById should return a hero', () => {
     const expectedHero = {
       id: 2,
       name: 'Spiderman',
@@ -15,13 +15,13 @@ describe('08-imp-exp', () => {
     expect(returnedHero).toStrictEqual(expectedHero)
   })
 
-  test('getHeroeById should return undefined if no hero', () => {
+  test('getheroById should return undefined if no hero', () => {
     const returnedHero = getHeroById(12) // 12 is out of bounds
 
     expect(returnedHero).toBeUndefined()
   })
 
-  test('getHeroesByOwner should return an array with DC heros', () => {
+  test('getherosByOwner should return an array with DC heros', () => {
     const expectedOwner = 'DC'
     const returnedHero = getHerosByOwner(expectedOwner)
 
