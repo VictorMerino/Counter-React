@@ -18,4 +18,11 @@ describe('FirstApp', () => {
 
     expect(screen.getByTestId('subtitle').textContent).toEqual(expectedSubtitle)
   })
+
+  test('should show subtitle based on prop received', async () => {
+    const expectedSubtitle = 'Subtitle from props'
+    render(<FirstApp greeting={expectedGreeting} subtitle={expectedSubtitle} />)
+
+    expect(screen.getByTestId('subtitle').textContent).toEqual(expectedSubtitle)
+  })
 })
