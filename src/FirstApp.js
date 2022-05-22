@@ -16,7 +16,7 @@ const FirstApp = ({ greeting }) => {
 }
 
 FirstApp.propTypes = {
-  greeting: PropTypes.string,
+  greeting: PropTypes.string.isRequired,
 }
 
 export default FirstApp
