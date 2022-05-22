@@ -1,5 +1,5 @@
 import PropTypes from 'prop-types'
-const FirstApp = ({ greeting, subtitle = 'Default value' }) => {
+const FirstApp = ({ greeting, subtitle }) => {
   const userName = 'Mader Faker'
   const object = {
     name: 'Name 1',
@@ -18,6 +18,10 @@ const FirstApp = ({ greeting, subtitle = 'Default value' }) => {
 
 FirstApp.propTypes = {
   greeting: PropTypes.string.isRequired,
+}
+
+FirstApp.defaultProps = {
+  subtitle: 'Default value',
 }
 
 export default FirstApp
