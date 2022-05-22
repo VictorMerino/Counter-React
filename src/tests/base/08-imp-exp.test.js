@@ -22,8 +22,12 @@ describe('08-imp-exp', () => {
   })
 
   test('getHeroesByOwner should return an array with DC heros', () => {
-    const returnedHero = getHerosByOwner('DC')
+    const expectedOwner = 'DC'
+    const returnedHero = getHerosByOwner(expectedOwner)
 
-    expect(returnedHero).toBeUndefined()
+    expect(returnedHero.length).toEqual(3)
+    expect(returnedHero).toStrictEqual(
+      heroData.filter(hero => hero.owner === expectedOwner)
+    )
   })
 })
