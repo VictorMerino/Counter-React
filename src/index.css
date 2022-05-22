@@ -6,3 +6,7 @@ html, body {
   font-family: 'Helvetica Neue';
   font-size: 1.3em;
 }
+
+button {
+  padding: 1em 2em;
+}
